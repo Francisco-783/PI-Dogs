@@ -1,0 +1,29 @@
+.loading {
+    display: inline;
+ /* necesitamos posicionar el contenido interno */
+  }
+  
+  .loading::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-top-color: #28c4ff;
+    animation: loading 1s ease-in-out infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  

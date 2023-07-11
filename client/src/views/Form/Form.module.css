@@ -1,0 +1,158 @@
+/* Estilo base para el formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+    min-height: 1000px;
+    animation: aparecer 1s forwards;
+}
+@keyframes aparecer {
+  from {
+    
+    opacity: 0;
+  }
+  to {
+    
+    opacity: 1;
+  }
+}
+  /* Estilo para los campos de formulario */
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+  /* Estilo para las etiquetas de los campos de formulario */
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 19px;
+    padding:5px;
+}
+
+  /* Estilo para los inputs de los campos de formulario */
+.input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 500px;
+    margin: auto;
+}
+
+  /* Estilo para los mensajes de error */
+.error {
+    color: #ff0000;
+    margin-top: 5px;
+    grid-column: span 2;
+}
+
+  /* Estilo para los checkboxes de los temperamentos */
+.temperament {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+  /* Estilo para el botón de submit */
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #008cba;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px;
+    width: 150px;
+}
+
+  /* Estilo para el botón de submit cuando está en hover */
+.button:hover {
+    background-color: #006b9f;
+}
+
+.container_temperament {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+.temperament {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+input[type="checkbox"] {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    border: 2px solid #aaa;
+    border-radius: 2px;
+    outline: none;
+    position: relative;
+}
+
+    input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 1px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    input[type="checkbox"]:checked:before {
+    background-color: #007bff;
+}
+
+.inputMinMax {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  width: 70%;
+  margin: auto;
+}
+
+.fieldMinMax {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
+  width: 70%;
+  border-bottom: grey solid 1px;
+  padding-bottom: 10px;
+}
+.labelMinMax {
+  margin-bottom: 5px;
+  font-weight: bold;
+  grid-column: span 2;
+  font-size: 19px;
+}
+
+.tempe{
+  font-weight: bold;
+  font-size: 19px;
+  margin: 10px ;
+  padding-bottom: 7px;
+}
